@@ -9,10 +9,6 @@ const Pin = ({ length = 4, perInputBox = 1, setPinFn = () => {} }) => {
   const inputRef = useRef([]);
 
   const onChangeHandler = (event, index) => {
-    if (event.keyCode === 32) {
-      return;
-    }
-
     inputBoxValue[index] = event.target.value;
     if (
       index < length - 1 &&
