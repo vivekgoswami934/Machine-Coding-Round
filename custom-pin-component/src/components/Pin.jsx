@@ -33,7 +33,7 @@ const Pin = ({ length = 4, perInputBox = 1, setPinFn = () => {} }) => {
     const copyData = e.clipboardData
       .getData("text")
       .split("")
-      .filter((_, index) => index < length * perInputBox);  // 123456789123456789123456789
+      .filter((_, index) => index < length * perInputBox); // 123456789123456789123456789
 
     let arr = [];
 
